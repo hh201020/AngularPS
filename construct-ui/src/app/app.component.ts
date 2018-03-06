@@ -8,7 +8,7 @@ import { Component, ElementRef, } from '@angular/core';
 export class AppComponent {
 
   public getGridRowHeight(): string {
-    return (document.documentElement.clientHeight  - 50) + 'px';
+    return (document.documentElement.clientHeight  - 20) + 'px';
   }
 
 }

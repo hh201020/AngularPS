@@ -28,5 +28,5 @@ import { LicenseConfigService } from './license-config.service';
   exports: []
 })
 export class AppModule {
-  showGrid = false;
+  showGrid = true;
 }
