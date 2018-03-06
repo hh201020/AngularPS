@@ -1,5 +1,6 @@
 import { Component, ElementRef, } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +9,7 @@ import { Component, ElementRef, } from '@angular/core';
 export class AppComponent {
 
   public getGridRowHeight(): string {
-    return (document.documentElement.clientHeight  - 20) + 'px';
+    return (document.documentElement.clientHeight  - 50) + 'px';
   }
 
 }

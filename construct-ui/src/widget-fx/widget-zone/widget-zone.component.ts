@@ -7,6 +7,7 @@ import { IWidget } from '../IWidget';
 
 import { EmptyWidgetComponent } from '../widgets/empty-widget/empty-widget.component';
 import { WidgetInfo } from '../widget-info';
+import { WidgetTypes } from '../widget-types.enum';
 import { WidgetFxConfig } from '../widgetFx-config';
 
 @Component({

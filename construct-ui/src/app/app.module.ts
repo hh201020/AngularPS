@@ -4,7 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MatGridListModule, MatMenuModule } from '@angular/material';
 import { WidgetFxModule } from '../widget-fx/widget-fx.module';
-import { LicenseConfigService } from './license-config.service';
+
+
 
 
 
@@ -23,10 +24,10 @@ import { LicenseConfigService } from './license-config.service';
 
     WidgetFxModule
   ],
-  providers: [LicenseConfigService],
+  providers: [],
   bootstrap: [AppComponent],
   exports: []
 })
 export class AppModule {
-  showGrid = true;
+  showGrid = false;
 }
