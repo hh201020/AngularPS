@@ -7,7 +7,6 @@ import { WidgetFxModule } from '../widget-fx/widget-fx.module';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent
