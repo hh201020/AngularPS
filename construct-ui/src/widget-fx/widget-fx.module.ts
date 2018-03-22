@@ -3,10 +3,15 @@ import { CommonModule } from '@angular/common';
 import { MatMenuModule, MatGridListModule } from '@angular/material';
 import { WidgetZoneComponent } from './widget-zone/widget-zone.component';
 import { EmptyWidgetComponent } from './widgets/empty-widget/empty-widget.component';
-import { SwitchBloatWidgetComponent } from './widgets/switch-bloat-widget/switch-bloat-widget.component';
-import { AttributeSelectorWidgetComponent } from './widgets/attribute-selector-widget/attribute-selector-widget.component';
-import { AttributeSelectorChildComponent } from './widgets/attribute-selector-widget/attribute-selector-child/attribute-selector-child.component';
-
+import { AsyncLoaderWidgetComponent } from './widgets/async-loader-widget/async-loader-widget.component';
+import { ImpurePipeComponent } from './widgets/impure-pipe-widget/impure-pipe.component';
+import { ImpurePipe } from './widgets/impure-pipe-widget/impure.pipe';
+import { TrackByWidgetComponent } from './widgets/trackby-widget/trackby-widget.component';
+import { MemoizeWidgetComponent } from './widgets/memoize-widget/memoize-widget.component';
+import { Hooks2Component } from './widgets/hooks2-widget-host/hooks2/hooks2.component';
+import { HooksWidgetHostComponent } from './widgets/hooks-widget-host/hooks-widget-host.component';
+import { Hooks2WidgetHostComponent } from './widgets/hooks2-widget-host/hooks2-widget-host.component';
+import { HooksComponent } from './widgets/hooks-widget-host/hooks.component/hooks.component';
 
 
 @NgModule({
@@ -19,17 +24,28 @@ import { AttributeSelectorChildComponent } from './widgets/attribute-selector-wi
     declarations: [
         WidgetZoneComponent,
         EmptyWidgetComponent,
-        SwitchBloatWidgetComponent,
-        AttributeSelectorWidgetComponent,
-        AttributeSelectorChildComponent
+        AsyncLoaderWidgetComponent,
+        ImpurePipeComponent,
+        ImpurePipe,
+        TrackByWidgetComponent,
+        MemoizeWidgetComponent,
+        Hooks2WidgetHostComponent,
+        Hooks2Component,
+        HooksWidgetHostComponent,
+        HooksComponent
     ],
     entryComponents: [
         EmptyWidgetComponent,
-        SwitchBloatWidgetComponent,
-        AttributeSelectorWidgetComponent
+        AsyncLoaderWidgetComponent,
+        ImpurePipeComponent,
+        TrackByWidgetComponent,
+        MemoizeWidgetComponent,
+        HooksWidgetHostComponent,
+        Hooks2WidgetHostComponent,
     ],
     exports: [
         WidgetZoneComponent,
+        ImpurePipe
     ],
     providers: [],
 })
