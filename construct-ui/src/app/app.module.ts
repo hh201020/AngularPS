@@ -26,4 +26,6 @@ import { WidgetFxModule } from '../widget-fx/widget-fx.module';
   bootstrap: [AppComponent],
   exports: []
 })
-export class AppModule {}
+export class AppModule {
+  showGrid = false;
+}
