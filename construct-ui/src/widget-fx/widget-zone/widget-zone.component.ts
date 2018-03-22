@@ -1,6 +1,7 @@
 import {
-    Component, Input, ViewEncapsulation, Type, ViewChild, ViewContainerRef,
-    Injector, ComponentFactoryResolver } from '@angular/core';
+    Component, Input, Type, ViewChild, ViewContainerRef, ComponentRef, ViewEncapsulation,
+    ElementRef, Injector, ComponentFactoryResolver
+} from '@angular/core';
 
 import { IWidget } from '../IWidget';
 
@@ -24,8 +25,7 @@ export class WidgetZoneComponent {
     activeWidgetTitle: string;
     activeWidget: IWidget;
     cfg: WidgetFxConfig = new WidgetFxConfig();
-    constructor(
-        private injector: Injector,
+    constructor(private injector: Injector,
         private cfr: ComponentFactoryResolver) {
 
     }

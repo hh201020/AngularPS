@@ -1,11 +1,7 @@
-// Not used for ngComponentOutlet
-
 import { WidgetInfo } from './widget-info';
 import { EmptyWidgetComponent } from './widgets/empty-widget/empty-widget.component';
-import { ContentProjectionWidgetComponent } from './widgets/content-projection-widget/content-projection-widget.component';
-import { NgIfElseWidgetComponent } from './widgets/ngIf-else/ngIf-else-widget.component';
-import { NgTemplateOutletContextWidgetComponent } from './widgets/ng-template-outlet-context/ng-template-outlet-context.component';
-import { ComponentInheritanceWidgetComponent } from './widgets/component-inheritance-widget/component-inheritance-widget.component';
+import { SwitchBloatWidgetComponent } from './widgets/switch-bloat-widget/switch-bloat-widget.component';
+import { AttributeSelectorWidgetComponent } from './widgets/attribute-selector-widget/attribute-selector-widget.component';
 
 export class WidgetFxConfig {
     private supportedWidgets: WidgetInfo[] = [];
@@ -21,16 +17,10 @@ export class WidgetFxConfig {
             new WidgetInfo('None', 'empty', EmptyWidgetComponent)
         );
         this.supportedWidgets.push(
-            new WidgetInfo('Content Projection', 'content-projection', ContentProjectionWidgetComponent)
+            new WidgetInfo('ngSwitch Bloat', 'switch-bloat', SwitchBloatWidgetComponent)
         );
         this.supportedWidgets.push(
-            new WidgetInfo('ngIf-else', 'ngIf-else', NgIfElseWidgetComponent)
-        );
-        this.supportedWidgets.push(
-            new WidgetInfo('NgTemplateOutletContext', 'ng-template-outlet-context', NgTemplateOutletContextWidgetComponent)
-        );
-        this.supportedWidgets.push(
-            new WidgetInfo('Component Inheritance', 'component-inheritance', ComponentInheritanceWidgetComponent)
+            new WidgetInfo('Attribute Selector', 'attribute-selector', AttributeSelectorWidgetComponent)
         );
     }
     private setSelectableWidgets() {
