@@ -1,6 +1,6 @@
 import { WidgetInfo } from './widget-info';
 import { EmptyWidgetComponent } from './widgets/empty-widget/empty-widget.component';
-import { SecurityWidgetComponent } from './widgets/security-widget/security-widget.component';
+import { DynamicFormWidgetComponent } from './widgets/dynamic-form-widget.component/dynamic-form-widget.component';
 
 export class WidgetFxConfig {
     private supportedWidgets: WidgetInfo[] = [];
@@ -16,7 +16,7 @@ export class WidgetFxConfig {
             new WidgetInfo('None', 'empty', EmptyWidgetComponent)
         );
         this.supportedWidgets.push(
-            new WidgetInfo('Bypassing Security', 'security', SecurityWidgetComponent)
+            new WidgetInfo('Dynamic Forms', 'dynamic-form', DynamicFormWidgetComponent)
         );
     }
     private setSelectableWidgets() {
